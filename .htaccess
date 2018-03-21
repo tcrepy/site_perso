@@ -1,0 +1,7 @@
+ErrorDocument 404 /404error.html	
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_URI} ^system.*
+RewriteRule ^(.*)$ .html?/$1 [L]
+
